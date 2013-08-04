@@ -1,5 +1,8 @@
 #!/usr/bin/python
 
+# frequency.py
+# given word list, find top n words by frequency
+
 words = 'cat, cat, dog, do, rr, rr, rr, apple, peach, pear, cat, pear, cat'
 freq = {}
 

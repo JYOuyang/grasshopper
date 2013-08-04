@@ -1,5 +1,8 @@
 #!/usr/bin/python
 
+# anagrams.py
+# group given words into anagrams
+
 words = ['cat', 'tac', 'god', 'dog', 'something']
 mydict = {}
 
