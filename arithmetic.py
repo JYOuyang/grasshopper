@@ -3,6 +3,8 @@
 # arithmetic.py
 # evaluate arithmetic expressions
 
+import re
+
 sumexpr = '1+2+3+4'
 
 print sum([int(each) for each in sumexpr.split('+')])
@@ -26,3 +28,7 @@ out = map(intsub, addgrps)
 
 print sum(out)
 
+subexpr = re.sub('([+-])', '.\g<0>', subexpr)
+addgrps = [int(each) for each in subexpr.split('.')]
+
+print sum(addgrps)
